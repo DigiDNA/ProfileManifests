@@ -280,65 +280,19 @@ Specify one array to enforce a single Operating System version across all machin
 							<key>pfm_app_min</key>
 							<string>1.0</string>
 							<key>pfm_description</key>
-							<string>A list of arrays, enabling localization of the More Info button URL path. Please see the aboutUpdateURLs wiki article for more information.</string>
+							<string>The required minimum operating system version. </string>
 							<key>pfm_documentation_url</key>
-							<string>https://github.com/macadmins/nudge/wiki/osVersionRequirements#aboutupdateurls&#45;&#45;&#45;type-array-default-value--required-no</string>
+							<string>https://github.com/macadmins/nudge/wiki/osVersionRequirements#aboutupdateurl---type-string-default-value-none-required-no</string>
 							<key>pfm_macos_min</key>
 							<string>11.0</string>
 							<key>pfm_name</key>
-							<string>aboutUpdateURLs</string>
+							<string>aboutUpdateURL</string>
 							<key>pfm_note</key>
-							<string>If this value is not passed, the more_info button will be hidden.</string>
-							<key>pfm_subkeys</key>
-							<array>
-								<dict>
-									<key>pfm_title</key>
-									<string>aboutUpdateURLs dictionary</string>
-									<key>pfm_hidden</key>
-									<string>container</string>
-									<key>pfm_subkeys</key>
-									<array>
-										<dict>
-											<key>pfm_macos_min</key>
-											<string>11.0</string>
-											<key>pfm_name</key>
-											<string>_language</string>
-											<key>pfm_type</key>
-											<string>string</string>
-										</dict>
-										<dict>
-											<key>pfm_macos_min</key>
-											<string>11.0</string>
-											<key>pfm_name</key>
-											<string>aboutUpdateURL</string>
-											<key>pfm_type</key>
-											<string>string</string>
-										</dict>
-									</array>
-									<key>pfm_type</key>
-									<string>dictionary</string>
-								</dict>
-							</array>
-							<key>pfm_type</key>
-							<string>array</string>
-						</dict>
-						<dict>
-							<key>pfm_app_min</key>
-							<string>1.0</string>
-							<key>pfm_description</key>
-							<string>The app path for a major upgrade.</string>
-							<key>pfm_documentation_url</key>
-							<string>https://github.com/macadmins/nudge/wiki/osVersionRequirements#majorupgradeapppath&#45;&#45;&#45;type-string-default-value--required-no</string>
-							<key>pfm_macos_min</key>
-							<string>11.0</string>
-							<key>pfm_name</key>
-							<string>majorUpgradeAppPath</string>
+							<string>When passing versions such as 11.2.0 it will be normalized to 11.2. It is recommended to leave the trailing zero off from the version number.</string>
 							<key>pfm_title</key>
-							<string>Major macOS Upgrade App Path</string>
+							<string>About Update URL</string>
 							<key>pfm_type</key>
 							<string>string</string>
-							<key>pfm_value_placeholder</key>
-							<string>/Applications/Install macOS Big Sur.app</string>
 						</dict>
 						<dict>
 							<key>pfm_app_min</key>
@@ -354,7 +308,7 @@ Specify one array to enforce a single Operating System version across all machin
 							<key>pfm_title</key>
 							<string>Required Installation Date</string>
 							<key>pfm_type</key>
-							<string>date</string>
+							<string>string</string>
 						</dict>
 						<dict>
 							<key>pfm_app_min</key>
@@ -378,26 +332,19 @@ Specify one array to enforce a single Operating System version across all machin
 							<key>pfm_app_min</key>
 							<string>1.0</string>
 							<key>pfm_description</key>
-							<string>The versions of macOS that require a security update. You can specify single version or multiple versions.</string>
+							<string>The required minimum operating system version. </string>
 							<key>pfm_documentation_url</key>
-							<string>https://github.com/macadmins/nudge/wiki/osVersionRequirements#targetedosversions&#45;&#45;&#45;type-array-default-value-</string>
+							<string>https://github.com/macadmins/nudge/wiki/osVersionRequirements#targetedosversionsrule---type-string-default-value--required-no</string>
 							<key>pfm_macos_min</key>
 							<string>11.0</string>
 							<key>pfm_name</key>
-							<string>targetedOSVersions</string>
-							<key>pfm_subkeys</key>
-							<array>
-								<dict>
-									<key>pfm_tile</key>
-									<string>OS Version</string>
-									<key>pfm_type</key>
-									<string>string</string>
-								</dict>
-							</array>
+							<string>targetedOSVersionsRule</string>
+							<key>pfm_note</key>
+							<string>Rules take the following precedence: full OS match example: device is running 11.5.1 and rule is 11.5.1 major OS match example: device us running 11.5.1 and rule is 11 default match example: device is running 11.5.1 and rule is default or targetedOSVersionsRule key is not present</string>
 							<key>pfm_title</key>
-							<string>Targeted OS Versions</string>
+							<string>targeted OS Versions Rule</string>
 							<key>pfm_type</key>
-							<string>array</string>
+							<string>string</string>
 						</dict>
 					</array>
 					<key>pfm_type</key>
