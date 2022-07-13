@@ -129,6 +129,8 @@
 					<string>attemptToFetchMajorUpgrade</string>
 					<string>asyncronousSoftwareUpdate</string>
 					<string>enforceMinorUpdates</string>
+					<string>acceptableCameraUsage</string>
+					<string>acceptableScreenSharingUsage</string>
 				</array>
 				<key>UI</key>
 				<array>
@@ -214,6 +216,42 @@
 			<key>pfm_type</key>
 			<string>boolean</string>
 		</dict>
+		<dict>
+			<key>pfm_app_min</key>
+			<string>1.0</string>
+			<key>pfm_default</key>
+			<false/>
+			<key>pfm_description</key>
+			<string>When enabled, Nudge will not activate or re-activate when the camera is on..</string>
+			<key>pfm_documentation_url</key>
+			<string>https://github.com/macadmins/nudge/wiki/optionalFeatures#acceptablecameraUsage---type-boolean-default-value-false-required-no</string>
+			<key>pfm_macos_min</key>
+			<string>11.0</string>
+			<key>pfm_name</key>
+			<string>acceptableCameraUsage</string>
+			<key>pfm_title</key>
+			<string>acceptable Camera Usage</string>
+			<key>pfm_type</key>
+			<string>boolean</string>
+		</dict>
+		<dict>
+			<key>pfm_app_min</key>
+			<string>1.0</string>
+			<key>pfm_default</key>
+			<false/>
+			<key>pfm_description</key>
+			<string>When enabled, Nudge will not activate or re-activate when the camera is on..</string>
+			<key>pfm_documentation_url</key>
+			<string>https://github.com/macadmins/nudge/wiki/optionalFeatures#acceptablescreensharingusage---type-boolean-default-value-false-required-no</string>
+			<key>pfm_macos_min</key>
+			<string>11.0</string>
+			<key>pfm_name</key>
+			<string>acceptableScreenSharingUsage</string>
+			<key>pfm_title</key>
+			<string>acceptable Screen Sharing Usage</string>
+			<key>pfm_type</key>
+			<string>boolean</string>
+		</dict>		
 		<!-- OS Version Requirements -->
 		<dict>
 			<key>pfm_app_min</key>
